@@ -11,7 +11,7 @@ public class Main {
         C = input.nextInt();
         D = input.nextInt();
         DIFERENCA = (A * B - C * D);
-        System.out.println("MEDIA = " + DIFERENCA);
+        System.out.println("DIFERENCA = " + DIFERENCA);
     }
 
 }
