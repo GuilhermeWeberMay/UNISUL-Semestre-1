@@ -14,15 +14,15 @@ public class Main {
         double trapezio = (a + b) * c / 2;
         double quadrado = b * b;
         double retangulo = a * b;
-        System.out.printf("TRINANGULO = %.3f", triangulo);
+        System.out.printf("TRIANGULO: %.3f", triangulo);
         System.out.println();
-        System.out.printf("CIRCULO = %.3f", circulo);
+        System.out.printf("CIRCULO: %.3f", circulo);
         System.out.println();
-        System.out.printf("TRAPEZIO = %.3f", trapezio);
+        System.out.printf("TRAPEZIO: %.3f", trapezio);
         System.out.println();
-        System.out.printf("QUADRADO = %.3f", quadrado);
+        System.out.printf("QUADRADO: %.3f", quadrado);
         System.out.println();
-        System.out.printf("RETANGULO = %.3f", retangulo);
+        System.out.printf("RETANGULO: %.3f", retangulo);
         System.out.println();
     }
 
