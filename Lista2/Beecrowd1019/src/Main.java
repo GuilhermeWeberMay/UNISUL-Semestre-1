@@ -10,7 +10,6 @@ public class Main {
         int minutos= (tempo % 3600) / 60;
         int horas = tempo / 3600;
         System.out.println(horas + ":" + minutos + ":" + segundos);
-        System.out.println();
     }
 
 }
