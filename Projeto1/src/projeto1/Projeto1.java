@@ -17,10 +17,18 @@ public class Projeto1 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a,b,c,d, soma;
+        int a,b,c,d, soma, contador = 1;
+        System.out.println("Digite "+contador+":");
+        contador++;
         a = sc.nextInt();
+        System.out.println("Digite "+contador+":");
+        contador++;
         b = sc.nextInt();
+        System.out.println("Digite "+contador+":");
+        contador++;
         c = sc.nextInt();
+        System.out.println("Digite "+contador+":");
+        contador++;
         d = sc.nextInt();
         soma = a+b+c+d;
         System.out.println("Soma:"+soma);
