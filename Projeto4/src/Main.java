@@ -8,8 +8,9 @@ public class Main {
         int numero = sc.nextInt();
         
         if (numero > 10){
-            System.err.println(numero / 2);
+            System.out.println(numero / 2);
         }
+        
     }
     
 }
