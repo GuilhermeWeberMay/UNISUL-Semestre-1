@@ -1,19 +1,50 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 
-/**
- *
- * @author User
- */
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+
+        double A = sc.nextDouble();
+        double B = sc.nextDouble();
+        double C = sc.nextDouble();
+
+        double[] lados = {A, B, C};
+
+        Arrays.sort(lados);
+
+        A = lados[2];
+        B = lados[1];
+        C = lados[0];
+
+        if (A >= B + C) {
+            System.out.println("NAO FORMA TRIANGULO");
+        } else {
+
+            if (A * A == B * B + C * C) {
+                System.out.println("TRIANGULO RETANGULO");
+            }
+
+            if (A * A > B * B + C * C) {
+                System.out.println("TRIANGULO OBTUSANGULO");
+            }
+
+            if (A * A < B * B + C * C) {
+                System.out.println("TRIANGULO ACUTANGULO");
+            }
+
+            if (A == B && B == C) {
+                System.out.println("TRIANGULO EQUILATERO");
+            }
+
+            if ((A == B && A != C) || (A == C && A != B) || (B == C && B != A)) {
+                System.out.println("TRIANGULO ISOSCELES");
+            }
+        }
+
+        sc.close();
     }
     
 }
